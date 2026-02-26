@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Forms</title>
+   <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <h2><i>Employee Survey</i></h2>
+
+    <form action="submit.php" method="post">
+
+    Firstname:
+    <input type="text" name="firstname" placeholder="Enter your first name"required>
+    <br>
+
+    Lastname:
+    <input type="text" name="lastname" placeholder="Enter your last name" required>
+    <br>
+
+    Email:
+    <input type="email" name="email" required>
+    <br>
+
+    Create Password:
+    <input type="password" name="password" required>
+    <br>
+
+    Mobile no:
+    <input type="tel" name="mobile" maxlength="10">
+    <br>
+
+    Gender:
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br>
+
+    Website:
+    <input type="url" name="website">
+    <br>
+
+    Search:
+    <input type="search" name="search">
+    <br>
+
+    Experience:
+    <input type="range" name="experience" min="0" max="10">
+    <br>
+
+    Favorite Color:
+    <input type="color" name="color">
+    <br>
+
+    Upload Photo:
+    <input type="file" name="file">
+    <br>
+
+    Department:
+    <select name="department">
+         <option value="CSE">CSE</option>
+        <option value="BME">BME</option>
+        <option value="EEE">EEE</option>
+        <option value="ECE">ECE</option>
+    </select>
+    <br>
+
+    Address:
+    <textarea name="address" rows="4" cols="30"></textarea>
+    <br>
+
+    Skills:
+    <input type="checkbox" name="skills" value="Java"> Java
+    <input type="checkbox" name="skills" value="C"> C
+    <input type="checkbox" name="skills" value="Python"> Python
+    <input type="checkbox" name="skills" value="C++"> C++
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
