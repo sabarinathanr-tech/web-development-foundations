@@ -7,79 +7,105 @@
 
 <body>
 
-    <h2><i>Employee Survey</i></h2>
+<h2><i>Employee Survey</i></h2>
 
-    <form action="submit.php" method="post">
+<form action="submit.php" method="post">
 
-    Firstname:
-    <input type="text" name="firstname" placeholder="Enter your first name"required>
-    <br>
+    <!-- First Name -->
+    <label for="firstname">Firstname:</label>
+    <input type="text" id="firstname" name="firstname"
+           placeholder="Enter your first name" required>
+    <br><br>
 
-    Lastname:
-    <input type="text" name="lastname" placeholder="Enter your last name" required>
-    <br>
+    <!-- Last Name -->
+    <label for="lastname">Lastname:</label>
+    <input type="text" id="lastname" name="lastname"
+           placeholder="Enter your last name" required>
+    <br><br>
 
-    Email:
-    <input type="email" name="email" required>
-    <br>
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
 
-    Create Password:
-    <input type="password" name="password" required>
-    <br>
+    <!-- Password -->
+    <label for="password">Create Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
 
-    Mobile no:
-    <input type="tel" name="mobile" maxlength="10">
-    <br>
+    <!-- Mobile -->
+    <label for="mobile">Mobile No:</label>
+    <input type="tel" id="mobile" name="mobile" maxlength="10">
+    <br><br>
 
-    Gender:
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="female"> Female
-    <br>
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
 
-    Website:
-    <input type="url" name="website">
-    <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br><br>
 
-    Search:
-    <input type="search" name="search">
-    <br>
+    <!-- Website -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website">
+    <br><br>
 
-    Experience:
-    <input type="range" name="experience" min="0" max="10">
-    <br>
+    <!-- Search -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search">
+    <br><br>
 
-    Favorite Color:
-    <input type="color" name="color">
-    <br>
+    <!-- Experience -->
+    <label for="experience">Experience:</label>
+    <input type="range" id="experience" name="experience" min="0" max="10">
+    <br><br>
 
-    Upload Photo:
-    <input type="file" name="file">
-    <br>
+    <!-- Color -->
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+    <br><br>
 
-    Department:
-    <select name="department">
-         <option value="CSE">CSE</option>
+    <!-- File Upload -->
+    <label for="file">Upload Photo:</label>
+    <input type="file" id="file" name="file">
+    <br><br>
+
+    <!-- Department -->
+    <label for="department">Department:</label>
+    <select id="department" name="department">
+        <option value="CSE">CSE</option>
         <option value="BME">BME</option>
         <option value="EEE">EEE</option>
         <option value="ECE">ECE</option>
     </select>
-    <br>
+    <br><br>
 
-    Address:
-    <textarea name="address" rows="4" cols="30"></textarea>
-    <br>
+    <!-- Address -->
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="30"></textarea>
+    <br><br>
 
-    Skills:
-    <input type="checkbox" name="skills" value="Java"> Java
-    <input type="checkbox" name="skills" value="C"> C
-    <input type="checkbox" name="skills" value="Python"> Python
-    <input type="checkbox" name="skills" value="C++"> C++
-    <br>
+    <!-- Skills -->
+    <label>Skills:</label>
+    <input type="checkbox" id="java" name="skills" value="Java">
+    <label for="java">Java</label>
+
+    <input type="checkbox" id="c" name="skills" value="C">
+    <label for="c">C</label>
+
+    <input type="checkbox" id="python" name="skills" value="Python">
+    <label for="python">Python</label>
+
+    <input type="checkbox" id="cpp" name="skills" value="C++">
+    <label for="cpp">C++</label>
+    <br><br>
 
     <input type="submit" value="Submit">
     <input type="reset" value="Reset">
 
-    </form>
+</form>
 
 </body>
 </html>
