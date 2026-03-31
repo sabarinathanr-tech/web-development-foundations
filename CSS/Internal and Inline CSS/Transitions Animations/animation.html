@@ -2,12 +2,69 @@
 <html>
 <head>
     <title>Animations</title>
-    <link rel="icon" href="logo.png">
+
     <style>
-        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            width: 80%;
+            height: 150px;
+            border: 2px dashed gray;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            border-radius: 10px;
+
+            animation: moveBox 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0) rotate(0deg);
+                background: red;
+            }
+
+            50% {
+                transform: translateX(300px) rotate(180deg);
+                background: blue;
+            }
+
+            100% {
+                transform: translateX(600px) rotate(360deg);
+                background: green;
+            }
+        }
     </style>
 </head>
+
 <body>
-    
+
+    <h2>Box Animation Demo</h2>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
 </body>
 </html>
