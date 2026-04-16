@@ -23,10 +23,15 @@ let id=Symbol("id");
 
 console.log("n:",n);
 console.log("s:",msg);
+console.log("bool:",bool);
+console.log("empty:",empty);
+console.log("typeof undef:",typeof undef);
+console.log("big:",big);
+console.log("id:",id);
 
 console.log("\n=== TYPE COERCION ===");
 
-console.log('"5" + 2 =', "5" + 2);
+console.log('"5" + 2 =', "5" + 2);  // only + operator causes string concatenation
 console.log('"5" - 2 =', "5" - 2);
 console.log('true + 1 =', true + 1);
 
@@ -51,14 +56,14 @@ if ("hello") {
 
 
 console.log("\n=== ARRAY REFERENCE ===");
+ 
+let arr1=[1,2,3];
+let arr2=arr1;
 
-let arr1 = [1, 2];
-let arr2 = arr1;
+arr2.push(4);
 
-arr2.push(3);
-
-console.log("arr1:", arr1);
-console.log("arr2:", arr2);
+console.log("arr1:",arr1);
+console.log("arr2:",arr2);
 
 
 console.log("\n=== CHALLENGE ===");
