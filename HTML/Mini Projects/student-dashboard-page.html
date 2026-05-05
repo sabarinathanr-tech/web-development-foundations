@@ -1,71 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>List Page</title>
+    <title>Student Dashboard</title>
     <link rel="icon" href="logo.png">
 </head>
 <body>
+
     <h1>STUDENT DASHBOARD</h1>
 
     <section>
         <div>NAVIGATION</div>
-        <div>[Home] [Profile] [Contact]</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+        </div>
     </section>
 
     <section>
         <h2>STUDENT DETAILS</h2>
         <table>
-
-            <tr>
-                <th>Name</th>
-                <th>Department</th>
-                <th>Year</th>
-                <th>Profile</th>
-            </tr>
-            <tr>
-                <td>Sabari</td>
-                <td>CSE</td>
-                <td>View Profile <a href="profile.html"></a></td>
-            </tr>
-            <tr>
-                <td>Arun</td>
-                <td>ECE</td>
-                <td>View Profile <a href="profile.html"></a></td>
-            </tr>
-            <tr>
-                <td>Kiran</td>
-                <td>MECH</td>
-                <td>View Profile <a href="profile.html"></a></td>
-            </tr>
-
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Year</th> <!-- // THIS was missing in your rows -->
+                    <th>Profile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sabari</td>
+                    <td>CSE</td>
+                    <td>2</td> <!-- // added -->
+                    <td><a href="profile.html" target="_blank">View Profile</a></td>
+                </tr>
+                <tr>
+                    <td>Arun</td>
+                    <td>ECE</td>
+                    <td>2</td> <!-- // added -->
+                    <td><a href="profile.html" target="_blank">View Profile</a></td>
+                </tr>
+                <tr>
+                    <td>Kiran</td>
+                    <td>MECH</td>
+                    <td>1</td> <!-- // added -->
+                    <td><a href="profile.html" target="_blank">View Profile</a></td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
     <section>
         <h2>PROJECTS TABLE</h2>
         <table>
-            <tr>
-                <th>Project Name</th>
-                <th>Tech Used</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>portfolio</td>
-                <td>HTML/CSS</td>
-                <td>Done</td>
-            </tr>
-            <tr>
-                <td>To-Do App</td>
-                <td>JS</td>
-                <td>Ongoing</td>
-            </tr>
-            <tr>
-                <td>Blog App</td>
-                <td>Python/Django</td>
-                <td>In Progress</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Tech Used</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portfolio</td>
+                    <td>HTML/CSS</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>To-Do App</td>
+                    <td>JS</td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td>Blog App</td>
+                    <td>Node.js</td>
+                    <td>Planned</td>
+                </tr>
+            </tbody>
         </table>
     </section>
+
+    <section>
+        <h2>EMBEDDED VIDEO</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bI6q16ffdgQ?si=WWl-GBlChwwrPO_j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <p>
+            If video doesn't load,
+            <a href="https://www.youtube.com/watch?v=8QZmnW9CobA" target="_blank">
+                watch on YouTube
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>ABOUT</h2>
+        <p>I am a <span>developer</span> building <span>projects</span> consistently.</p>
+    </section>
+
+    <footer>
+        <p>Contact: sample@email.com</p>
+        <p>Visit: <a href="https://github.com/sabarinathanr-tech" target="_blank">GitHub Profile</a></p>
+    </footer>
 
 </body>
 </html>
