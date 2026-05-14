@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <h2>PERSONAL INFORMATION </h2>
+
+    <form action="submit.php" method="post">
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+        </section>
+
+        <section>
+            <h2>GENDER</h2>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </section>
+
+        <section>
+            <h2>SKILLS</h2>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+        </section>
+
+        <section>
+            <h2>DEPARTMENT</h2>
+            <select id="department" name="department">
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>ABOUT YOURSELF</h2>
+            <textarea id="about" name="about" rows="4" cols="50"></textarea>
+        </section>
+
+        <section>
+            <h2>UPLOAD RESUME</h2>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        </section>
+
+        <section>
+            <h2>ACTIONS</h2>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </section>
+        <p>Thank you for registering.</p>
+
+    </form>
+
+</body>
+</html>
